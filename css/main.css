@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #FF3366;
-  --color-primary-dark: #BA265D;
+  --color-primary: #d17859;
+  --color-primary-light: #e29579;
+  --color-primary-dark: #c25b35;
   --color-gray-light-1: #faf9f9;
   --color-gray-light-2: #f4f2f2;
   --color-gray-light-3: #f0eeee;
@@ -249,20 +249,31 @@ body {
 }
 .gallery__photo {
   width: 100%;
+}
+.gallery__photo {
+  width: 100%;
   display: block;
 }
 
 .overview {
   display: flex;
   align-items: center;
+  border-right: var(--line);
   border-bottom: var(--line);
+}
+.overview__resto {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .overview__heading {
   font-size: 2.25rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem 0rem;
 }
 @media only screen and (max-width: 37.5em) {
   .overview__heading {
@@ -271,13 +282,13 @@ body {
   }
 }
 .overview__stars {
-  margin-right: auto;
   display: flex;
+  padding-bottom: 1.5rem;
 }
 .overview__icon-star, .overview__icon-location {
-  width: 1.75rem;
-  height: 1.75rem;
-  fill: var(--color-primary);
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fde03d;
 }
 .overview__location {
   font-size: 1.2rem;
@@ -554,14 +565,6 @@ body {
     align-content: space-around;
     height: 11rem;
   }
-}
-
-.sidebar {
-  background-color: var(--color-gray-dark-1);
-  flex: 0 0 18%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .hotel-view {
