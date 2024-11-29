@@ -400,11 +400,16 @@
   border-bottom: var(--line);
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
 
   &__item {
-    flex: 0 0 50%;
     margin-bottom: 0.7rem;
+
+    &--keytext{
+      font-weight: 700;
+    }
+
   }
 
   &__item::before {
@@ -427,6 +432,12 @@
       mask-size: cover;
       background-image: none;
     }
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
   }
 }
 

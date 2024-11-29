@@ -306,10 +306,11 @@ body {
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
-  flex-wrap: wrap; }
+  flex-direction: column; }
   .list__item {
-    flex: 0 0 50%;
     margin-bottom: 0.7rem; }
+    .list__item--keytext {
+      font-weight: 700; }
   .list__item::before {
     content: "";
     display: inline-block;
@@ -326,6 +327,10 @@ body {
         mask-image: url(../img/chevron-thin-right.svg);
         mask-size: cover;
         background-image: none; } }
+  .list__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem; }
 
 .recommend {
   font-size: 1.3rem;
