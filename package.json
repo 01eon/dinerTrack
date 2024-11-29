@@ -1,7 +1,7 @@
 {
-  "name": "trillo-shit",
+  "name": "dinetrack",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Landing page for dinetrack",
   "main": "index.js",
   "scripts": {
     "start": "live-server",
