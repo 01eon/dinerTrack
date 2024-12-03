@@ -386,7 +386,7 @@ body {
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .list__item {
   margin-bottom: 0.7rem;
