@@ -246,7 +246,6 @@ body {
 
 .gallery {
   display: flex;
-  max-height: 29.6rem;
 }
 .gallery__photo {
   width: 100%;
@@ -386,13 +385,12 @@ body {
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .list__item {
+  flex: 0 0 50%;
   margin-bottom: 0.7rem;
-}
-.list__item--keytext {
-  font-weight: 700;
 }
 .list__item::before {
   content: "";
@@ -412,11 +410,6 @@ body {
     mask-size: cover;
     background-image: none;
   }
-}
-.list__heading {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
 }
 
 .recommend {

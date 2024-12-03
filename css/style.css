@@ -196,8 +196,7 @@ body {
       display: none; } }
 
 .gallery {
-  display: flex;
-  max-height: 29.6rem; }
+  display: flex; }
   .gallery__photo {
     width: 100%; }
   .gallery__photo {
@@ -307,17 +306,17 @@ body {
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap; }
   .list__item {
-    margin-bottom: 0.7rem; }
-    .list__item--keytext {
-      font-weight: 700; }
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
   .list__item::before {
     content: "";
     display: inline-block;
     height: 1rem;
     width: 1rem;
-    margin-right: 0.7rem;
+    margin-right: .7rem;
     background-image: url(../img/_chevron-thin-right.svg);
     background-size: cover; }
     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
@@ -328,10 +327,6 @@ body {
         mask-image: url(../img/_chevron-thin-right.svg);
         mask-size: cover;
         background-image: none; } }
-  .list__heading {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 2rem; }
 
 .recommend {
   font-size: 1.3rem;
