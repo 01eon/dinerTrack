@@ -196,6 +196,7 @@ body {
       display: none; } }
 
 .gallery {
+  overflow: hidden;
   display: flex; }
   .gallery__photo {
     width: 100%; }
